@@ -1,0 +1,84 @@
+*{ box-sizing: border-box;}
+
+body {
+	background-color: aliceblue;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	line-height: 1.4;
+	margin: 0;
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header {
+	padding: 2em 0;
+	background-color: #ec897c;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+/* Block */
+.card {
+	margin: 4em 0;
+	padding: 4em;
+	border: 0.15em solid #333;
+	width: 30%;
+}
+
+/* Élément */
+.card__links {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;	
+}
+
+/* Élément */
+.card__link {
+	text-decoration: none;
+	background-color: #cfc4c4;
+	color: #333;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	margin-right: 0.4em;
+}
+
+/* Pseudo classe de l'élément ci-haut */
+.card__link:hover {
+	background-color: #ec897c;
+}
+
+/* Modificateur */
+.card__link--active {
+	background-color: #beb6b6;
+	font-weight: 700;
+}
+
+/* Élément */
+.card__btn {	
+	color: white;
+	text-decoration: none;
+	padding: 0.5em 1em;
+	border-radius: 0.5em;
+	display: inline-block;
+	margin-top: 0.5em;
+}
+
+/* Modificateur */
+.card__btn--green {
+	background-color: #2c8973;
+}
+
+/* Pseudo classe du modificateur ci-haut */
+.card__btn--green:hover {
+	background-color: #267764;
+}
+

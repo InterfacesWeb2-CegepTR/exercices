@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Gabarit d'exercice</title>
+	<meta name="description" content="Exercice dans le cadre du cours Intégration des inferfaces web 2">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="icon" href="favicon.ico"/>
+</head> 
+
+<body>
+	<header>
+		<div class="container">
+			<h1>BEM 2.3</h1>		
+		</div>		
+	</header>
+	<main>
+		<form action="GET" class="form">
+			<h2>Informations personnelles</h2>
+			<div class="form__form-item">
+				<label class="form__label" for="prenom">Votre prénom</label>
+				<input class="form__field" type="text" name="prenom" id="prenom">
+			</div>
+			<div class="form__form-item">
+				<label class="form__label" for="nom">Votre nom</label>
+				<input class="form__field" type="text" name="nom" id="nom">
+			</div>
+			<div class="form__form-item">
+				<label class="form__label" for="email">Votre email</label>
+				<input class="form__field" type="email" name="email" id="email">
+			</div>
+			<div class="form__form-item">
+				<label class="form__label" for="numTel">Votre numéro de téléphone</label>
+				<input class="form__field" type="tel" name="numTel" id="numTel">
+			</div>
+			<div class="form__action-buttons">
+				<input class="form__action-button form__action-button--cancel" type="reset" value="Réinitialiser">
+				<input class="form__action-button form__action-button--submit" type="submit" value="Envoyer">
+			</div>
+
+		</form>
+	</main>
+</body>
+
+</html>

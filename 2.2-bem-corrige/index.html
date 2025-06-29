@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Gabarit d'exercice</title>
+	<meta name="description" content="Exercice dans le cadre du cours Intégration des inferfaces web 2">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="icon" href="favicon.ico"/>
+</head> 
+
+<body>
+	<header>
+		<div class="container">
+			<h1>BEM 2.2</h1>		
+		</div>		
+	</header>
+	<main>
+		<!--Cet élément représente notre block, la classe card.-->
+		<div class="card">
+			<nav>
+				<!--Cette liste ne ferait pas de sens si elle ne faisait pas partie de CARD, donc c'est un ÉLÉMENT de CARD-->
+				<ul class="card__links">
+					<li>
+						<!--L'élément card__link contient le CSS par défaut pour un lien. Le modificateur card__link--active contient des règles CSS supplémentaires pour modifier l'apparence du lien actif.-->
+						<a class="card__link card__link--active" href="#">Adobe XD</a>
+					</li>
+					<li>
+						<a class="card__link" href="#">Figma</a>
+					</li>
+					<li>
+						<a class="card__link" href="#">Sketch</a>
+					</li>
+				</ul>											
+			</nav>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus obcaecati eos ab commodi possimus? In culpa at maiores perferendis iusto!</p>
+			<!--Ici on pourrait seulement utiliser la classe card-btn, mais qu'arriverait-il si nous ajoutions un bouton avec la couleur bleu?-->
+			<a class="card__btn card__btn--green" href="#">Visiter le lien</a>
+		</div>
+	</main>
+</body>
+
+</html>
